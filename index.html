@@ -7,10 +7,54 @@
     <title>FizzBuzz String Generator</title>
     <script src='./js/checkFizzBuzz.js'></script>
     <script src='./js/processNumbers.js'></script>
+    <script src='./js/renderFizzBuzz.js'></script>
 </head>
 <body>
-    <h1>FizzBuzz String Generator</h1>
-    <div id="fizzbuzz-container"> </div>
-    
+  <h1>FizzBuzz String Generator</h1>
+  <p>What should the first number in the integer sequence be?</p>
+  <input 
+    id="first-integer"
+    class="number-field"
+    type="number"
+    value="1"
+  />
+  <p>What should the last number in the integer sequence be?</p>
+  <input 
+    id="last-integer"
+    class="number-field"
+    type="number"
+    value="50"
+  />
+
+  <p>What should the multiple for Fizz be?</p>
+  <input 
+    id="fizz-number"
+    class="number-field"
+    type="number"
+    value="3"
+  />
+
+  <p>What should the multiple for Buzz be?</p>
+  <input 
+    id="buzz-number"
+    class="number-field"
+    type="number"
+    value="5"
+  />
+
+  <button 
+    id="calculate-button" 
+    name="calculate-button" 
+    class="button" 
+    onClick="renderFizzBuzz(
+      document.getElementById(`first-integer`).value,
+      document.getElementById(`last-integer`).value,
+      document.getElementById(`fizz-number`).value,
+      document.getElementById(`buzz-number`).value
+    )"
+  >Calculate FizzBuzz</button> 
+
+  <div id="fizzbuzz-container"> </div>
+
 </body>
 </html>
