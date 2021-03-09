@@ -11,3 +11,5 @@ const checkFizzBuzz = (num, fizz, buzz) => {
     };
     return result;
 };
+
+window.checkFizzBuzz = checkFizzBuzz;
