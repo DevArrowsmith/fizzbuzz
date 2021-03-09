@@ -6,8 +6,10 @@ const renderFizzBuzz = (start, end, fizz, buzz) => {
 
   const sequence = processNumbers(start, end, fizz, buzz);
 
-  sequence.forEach(number => {
-    fizzBuzzContainer.insertAdjacentHTML('beforeend', `<p>${number}</p>`);
-  })
+  fizzBuzzContainer.insertAdjacentHTML('beforeend', `
+    <p>Your FizzBuzz Sequence:</p>
+    <p>${sequence}</p>
+  `);
+  
 };
 
