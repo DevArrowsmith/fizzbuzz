@@ -6,7 +6,8 @@ const checkFizzBuzz = (num, fizz, buzz) => {
         result = "Fizz"
     } else if (num%buzz === 0) {
         result = "Buzz"
+    } else {
+        result = num
     };
-    console.log(result);
     return result;
 };
