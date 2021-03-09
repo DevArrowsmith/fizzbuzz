@@ -1,11 +1,12 @@
-const checkFizzBuzz = (num) => {
+const checkFizzBuzz = (num, fizz, buzz) => {
     let result;
-    if (num%3 === 0 && num%5 === 0) {
+    if (num%fizz === 0 && num%buzz === 0) {
         result = "FizzBuzz"
-    } else if (num%3 === 0) {
+    } else if (num%fizz === 0) {
         result = "Fizz"
-    } else if (num%5 === 0) {
+    } else if (num%buzz === 0) {
         result = "Buzz"
     };
+    console.log(result);
     return result;
 };
