@@ -5,3 +5,5 @@ const processNumbers = (start, end, fizz, buzz) => {
     };
     return result;
 };
+
+window.processNumbers = processNumbers;
