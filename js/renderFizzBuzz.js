@@ -1,6 +1,6 @@
 const renderFizzBuzz = (start, end, fizz, buzz) => {
-  
-  const fizzBuzzContainer = document.getElementById(`${container}`);
+
+  const fizzBuzzContainer = document.getElementById("fizzbuzz-container");
 
   fizzBuzzContainer.innerHTML = '';
 
