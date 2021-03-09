@@ -17,6 +17,7 @@
     class="number-field"
     type="number"
     value="1"
+    onkeypress="return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57"
   />
   <p>What should the last number in the integer sequence be?</p>
   <input 
@@ -24,6 +25,7 @@
     class="number-field"
     type="number"
     value="50"
+    onkeypress="return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57"
   />
 
   <p>What should the multiple for Fizz be?</p>
@@ -32,6 +34,8 @@
     class="number-field"
     type="number"
     value="3"
+    pattern="[0-9]*"
+    onkeypress="return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57"
   />
 
   <p>What should the multiple for Buzz be?</p>
@@ -40,6 +44,8 @@
     class="number-field"
     type="number"
     value="5"
+    onkeypress="return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57"
+
   />
 
   <button 
